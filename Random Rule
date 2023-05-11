@@ -1,3 +1,4 @@
+```python
 #Random Rule of the Day
 
 #Import .csv data - DONE
@@ -13,3 +14,4 @@ directory = 'https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition'
 df = pd.read_html(directory)[0]
 rrule = rd.randrange(0,len(df))
 print(df.loc[rrule][1])
+```
