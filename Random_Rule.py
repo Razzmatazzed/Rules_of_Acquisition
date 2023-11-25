@@ -10,6 +10,6 @@ import random as rd
 
 
 directory = 'https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition'
-df = pd.read_html(directory)[0]
+df = pd.read_html(directory)[1]
 rrule = rd.randrange(0,len(df))
 print(df.loc[rrule][1])
